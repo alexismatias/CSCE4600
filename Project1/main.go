@@ -127,11 +127,51 @@ func FCFSSchedule(w io.Writer, title string, processes []Process) {
 	outputSchedule(w, schedule, aveWait, aveTurnaround, aveThroughput)
 }
 
-//func SJFPrioritySchedule(w io.Writer, title string, processes []Process) { }
-//
-//func SJFSchedule(w io.Writer, title string, processes []Process) { }
-//
-//func RRSchedule(w io.Writer, title string, processes []Process) { }
+/*func SJFPrioritySchedule(w io.Writer, title string, processes []Process) {
+	var (
+		totalWait       float64
+		totalTurnaround float64
+		lastCompletion  float64
+		waitingTime     int64
+		schedule        = make([][]string, len(processes))
+		gantt           = make([]TimeSlice, 0)
+	)
+
+	//For loop to find remaining bursts
+	then find highest priority w/shortest burst time
+}*/
+
+/*func SJFSchedule(w io.Writer, title string, processes []Process) {
+
+	var (
+		totalWait       float64
+		totalTurnaround float64
+		lastCompletion  float64
+		waitingTime     int64
+		schedule        = make([][]string, len(processes))
+		gantt           = make([]TimeSlice, 0)
+		remainingBurst  = make([]int64, len(processes))
+	)
+
+	//for loop to find remaining bursts
+	//then find shortest burst time
+
+}*/
+
+/*func RRSchedule(w io.Writer, title string, processes []Process) {
+	var (
+		totalWait       float64
+		totalTurnaround float64
+		lastCompletion  float64
+		waitingTime     int64
+		schedule        = make([][]string, len(processes))
+		gantt           = make([]TimeSlice, 0)
+	)
+
+	//for loop to find remaining bursts
+	//then find time quantum
+
+ }*/
 
 //endregion
 
